@@ -44,7 +44,7 @@ del Pozo, D., Lopez-Gomez, I., Romero, I. (2019) **A robust asymmetrical contact
 
 (Upcoming) Hybrid dynamical-generative downscaling of climate model ensembles. *Gordon Research Conference on Machine Learning for Actionable Climate Science*, 22-27 June 2025, Bryant University, RI.
 
-(Upcoming) AI for climate physics. *Guest lecture, University of California, Berkeley*, Berkeley, Ca.
+AI for climate physics. *Guest lecture, Department of Physics, University of California, Berkeley*, 26 February 2025, Berkeley, CA.
 
 Hybrid dynamical-generative downscaling of climate model ensembles. *American Geophysical Union, Fall Meeting 2024*, 9-13 December 2024, Washington, D.C. [Abstract](https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1565072)
 
