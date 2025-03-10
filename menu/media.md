@@ -5,6 +5,10 @@ image: Human-Impact-on-the-Planet.webp
 backup_image: Human-Impact-on-the-Planet.jpg
 ---
 
+### 2025
+
+[Earth scientists to environmentalists: AI isn’t all bad](https://thebulletin.org/2025/03/earth-scientists-to-environmentalists-ai-isnt-all-bad/)
+
 ### 2024
 
 [Google's new AI tool can forecast weather at a fraction of the cost](https://www.androidpolice.com/google-seeds-weather-forecast-ai-prediction/)
