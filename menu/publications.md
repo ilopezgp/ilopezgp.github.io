@@ -9,14 +9,14 @@ backup_image: stratocumulus-baja.jpg
 
 Wan, Z. Y., Lopez-Gomez, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2024) **Statistical downscaling via high-dimensional distribution matching with generative models**. [doi](https://arxiv.org/abs/2412.08079)
 
-Lopez-Gomez, I., Wan, Z. Y., Zepeda-Núñez, L., Schneider, T., Anderson, J., Sha, F. (2024) **Dynamical-generative downscaling of climate model ensembles**, *under review*. [doi](https://arxiv.org/abs/2410.01776)
-
 Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2024) **Online learning of eddy-viscosity and backscattering closures for
   geophysical turbulence using ensemble Kalman inversion**, *under review*. [doi](https://doi.org/10.48550/arXiv.2409.04985)
 
 Barthel Sorensen, B., Zepeda-Núñez, L., Lopez-Gomez, I., Wan, Z. Y., Carver, R., Sha, F., Sapsis, T. (2024) **A probabilistic framework for learning non-intrusive corrections to long-time climate simulations from short-time training data**, *under review*. [doi](https://doi.org/10.48550/arXiv.2408.02688)
 
 ### Peer-reviewed articles
+
+Lopez-Gomez, I., Wan, Z. Y., Zepeda-Núñez, L., Schneider, T., Anderson, J., Sha, F. (2025) **Dynamical-generative downscaling of climate model ensembles**, *in press, Proceedings of the National Academy of Sciences*. [preprint](https://arxiv.org/abs/2410.01776)
 
 Christopoulos, C., Lopez-Gomez, I., Beucler, T., Cohen, Y., Kawczynski, C., Dunbar, O. R. A., Schneider, T. (2024) **Online learning of entrainment closures in a hybrid machine learning parameterization**, *Journal of Advances in Modeling Earth Systems*, 16, e2024MS004485. [doi](https://doi.org/10.1029/2024MS004485)
 
