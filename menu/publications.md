@@ -16,7 +16,7 @@ Barthel Sorensen, B., Zepeda-Núñez, L., Lopez-Gomez, I., Wan, Z. Y., Carver, R
 
 ### Peer-reviewed articles
 
-Lopez-Gomez, I., Wan, Z. Y., Zepeda-Núñez, L., Schneider, T., Anderson, J., Sha, F. (2025) **Dynamical-generative downscaling of climate model ensembles**, *Proceedings of the National Academy of Sciences*, 122, e2420288122. [doi](https://doi.org/10.1073/pnas.2420288122)
+Lopez-Gomez, I., Wan, Z. Y., Zepeda-Núñez, L., Schneider, T., Anderson, J., Sha, F. (2025) **Dynamical-generative downscaling of climate model ensembles**, *Proceedings of the National Academy of Sciences*, 122, e2420288122. [doi](https://doi.org/10.1073/pnas.2420288122) [pdf](https://ilopezgp.github.io/assets/papers/lopez-gomez-et-al-dynamical-generative-downscaling-of-climate-model-ensembles.pdf)
 
 Christopoulos, C., Lopez-Gomez, I., Beucler, T., Cohen, Y., Kawczynski, C., Dunbar, O. R. A., Schneider, T. (2024) **Online learning of entrainment closures in a hybrid machine learning parameterization**, *Journal of Advances in Modeling Earth Systems*, 16, e2024MS004485. [doi](https://doi.org/10.1029/2024MS004485)
 
