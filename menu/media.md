@@ -7,6 +7,8 @@ backup_image: Human-Impact-on-the-Planet.jpg
 
 ### 2025
 
+[Zooming in: Efficient regional environmental risk assessment with generative AI](https://research.google/blog/zooming-in-efficient-regional-environmental-risk-assessment-with-generative-ai/)
+
 [Earth scientists to environmentalists: AI isn’t all bad](https://thebulletin.org/2025/03/earth-scientists-to-environmentalists-ai-isnt-all-bad/)
 
 ### 2024
