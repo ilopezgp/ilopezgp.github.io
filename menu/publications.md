@@ -7,10 +7,9 @@ backup_image: stratocumulus-baja.jpg
 
 ### Preprints & submitted articles
 
-Wan<sup>\*</sup>, Z. Y., Lopez-Gomez<sup>\*</sup>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2025) **Regional climate risk assessment from climate models using probabilistic machine learning**. [doi](https://arxiv.org/abs/2412.08079)
+Wan<sup>\*</sup>, Z. Y., Lopez-Gomez<sup>\*</sup>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2025) **Regional climate risk assessment from climate models using probabilistic machine learning**, *under review*. [doi](https://arxiv.org/abs/2412.08079)
 
-Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2024) **Online learning of eddy-viscosity and backscattering closures for
-  geophysical turbulence using ensemble Kalman inversion**, *under review*. [doi](https://doi.org/10.48550/arXiv.2409.04985)
+Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2024) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *under review*. [doi](https://doi.org/10.48550/arXiv.2409.04985)
 
 Barthel Sorensen, B., Zepeda-Núñez, L., Lopez-Gomez, I., Wan, Z. Y., Carver, R., Sha, F., Sapsis, T. (2024) **A probabilistic framework for learning non-intrusive corrections to long-time climate simulations from short-time training data**, *under review*. [doi](https://doi.org/10.48550/arXiv.2408.02688)
 
@@ -42,7 +41,9 @@ del Pozo, D., Lopez-Gomez, I., Romero, I. (2019) **A robust asymmetrical contact
 
 ### Conference presentations & talks
 
-Accelerating Regional Climate Risk Assessment with Generative Downscaling. *Pacific Northwest National Laboratory*, 23 July 2025, Richland, WA.
+(Upcoming) Accelerating Regional Climate Risk Assessment with Generative Downscaling. *GenAI for Climate Science, LEAP Climate Week*, 25 September 2025, New York City, NY.
+ 
+Accelerating Regional Climate Risk Assessment with Generative Downscaling. *Pacific Northwest National Laboratory Seminar*, 23 July 2025, Richland, WA.
 
 Dynamical-generative downscaling of climate model ensembles. *Gordon Research Conference on Machine Learning for Actionable Climate Science*, 22-27 June 2025, Bryant University, Smithfield, RI. [Website](https://www.grc.org/machine-learning-for-actionable-climate-science-conference/2025/)
 
