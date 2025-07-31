@@ -41,7 +41,7 @@ del Pozo, D., Lopez-Gomez, I., Romero, I. (2019) **A robust asymmetrical contact
 
 ### Conference presentations & talks
 
-(Upcoming) Accelerating Regional Climate Risk Assessment with Generative Downscaling. *GenAI for Climate Science, LEAP Climate Week*, 25 September 2025, New York City, NY.
+(Upcoming) GenAI for Downscaling. *GenAI for Climate Science: A LEAP Science and Technology Center-hosted Panel*, 25 September 2025, Columbia University, New York City, NY.
  
 Accelerating Regional Climate Risk Assessment with Generative Downscaling. *Pacific Northwest National Laboratory Seminar*, 23 July 2025, Richland, WA.
 
