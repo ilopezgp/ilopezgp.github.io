@@ -41,8 +41,10 @@ del Pozo, D., Lopez-Gomez, I., Romero, I. (2019) **A robust asymmetrical contact
 
 ### Conference presentations & talks
 
-(Upcoming) GenAI for Downscaling. *GenAI for Climate Science: A LEAP Science and Technology Center-hosted Panel*, 25 September 2025, Columbia University, New York City, NY.
- 
+(Upcoming) GenAI for Downscaling. *GenAI for Climate Science: A LEAP Science and Technology Center-hosted Panel*, 25 September 2025, Columbia University, New York City, NY. [Website](https://www.eventbrite.com/e/genai-for-climate-science-tickets-1478678801099?aff=oddtdtcreator)
+
+(Upcoming) Generative downscaling of climate projection ensembles. *7th NOAA AI Workshop – Generative AI for Earth and Space Science Applications*, 16-17 September 2025, UCAR/NCAR Center Green Campus, Boulder, CO. [Website](https://www.noaa.gov/events/7th-noaa-ai-workshop-2025)
+
 Accelerating Regional Climate Risk Assessment with Generative Downscaling. *Pacific Northwest National Laboratory Seminar*, 23 July 2025, Richland, WA.
 
 Dynamical-generative downscaling of climate model ensembles. *Gordon Research Conference on Machine Learning for Actionable Climate Science*, 22-27 June 2025, Bryant University, Smithfield, RI. [Website](https://www.grc.org/machine-learning-for-actionable-climate-science-conference/2025/)
