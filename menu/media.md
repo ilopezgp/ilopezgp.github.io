@@ -9,6 +9,8 @@ backup_image: Human-Impact-on-the-Planet.jpg
 
 [Local predictions of climate change are hazy. But cities need answers fast](https://www.science.org/content/article/local-predictions-climate-change-are-hazy-cities-need-answers-fast), *Science*.
 
+[Google AI Unveils a Hybrid AI-Physics Model for Accurate Regional Climate Risk Forecasts with Better Uncertainty Assessment](https://www.marktechpost.com/2025/06/12/google-ai-unveils-a-hybrid-ai-physics-model-for-accurate-regional-climate-risk-forecasts-with-better-uncertainty-assessment/), *MarkTechPost*.
+
 [Zooming in: Efficient regional environmental risk assessment with generative AI](https://research.google/blog/zooming-in-efficient-regional-environmental-risk-assessment-with-generative-ai/), *Google Research Blog*.
 
 [Earth scientists to environmentalists: AI isn’t all bad](https://thebulletin.org/2025/03/earth-scientists-to-environmentalists-ai-isnt-all-bad/), *Bulletin of the Atomic Scientists*.
