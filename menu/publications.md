@@ -45,6 +45,8 @@ del Pozo, D., Lopez-Gomez, I., Romero, I. (2019) **A robust asymmetrical contact
 
 (Upcoming) Generative downscaling of climate projection ensembles. *7th NOAA AI Workshop – Generative AI for Earth and Space Science Applications*, 16-17 September 2025, UCAR/NCAR Center Green Campus, Boulder, CO. [Website](https://www.noaa.gov/events/7th-noaa-ai-workshop-2025)
 
+(Upcoming) Keynote address: Generative downscaling of climate projection ensembles. *2nd Annual Workshop on AI/ML Methods in Weather and Climate Modelling*, 12-13 September 2025, Ashoka University, Sonipat, India. [Website](https://www.noaa.gov/events/7th-noaa-ai-workshop-2025)
+
 Accelerating Regional Climate Risk Assessment with Generative Downscaling. *Pacific Northwest National Laboratory Seminar*, 23 July 2025, Richland, WA.
 
 Dynamical-generative downscaling of climate model ensembles. *Gordon Research Conference on Machine Learning for Actionable Climate Science*, 22-27 June 2025, Bryant University, Smithfield, RI. [Website](https://www.grc.org/machine-learning-for-actionable-climate-science-conference/2025/)
