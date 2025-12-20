@@ -11,7 +11,7 @@ Wan<sup>\*</sup>, Z. Y., Lopez-Gomez<sup>\*</sup>, I., Carver, R.,  Schneider, T
 
 Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2024) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *under review*. [doi](https://doi.org/10.48550/arXiv.2409.04985)
 
-Barthel Sorensen, B., Zepeda-Núñez, L., Lopez-Gomez, I., Wan, Z. Y., Carver, R., Sha, F., Sapsis, T. (2024) **A probabilistic framework for learning non-intrusive corrections to long-time climate simulations from short-time training data**, *under review*. [doi](https://doi.org/10.48550/arXiv.2408.02688)
+Barthel Sorensen, B., Zepeda-Núñez, L., Lopez-Gomez, I., Wan, Z. Y., Carver, R., Sha, F., Sapsis, T. (2025) **A probabilistic framework for learning non-intrusive corrections to long-time climate simulations from short-time training data**, *in press, Journal of Advances in Modeling Earth Systems*. [preprint](https://doi.org/10.48550/arXiv.2408.02688)
 
 ### Peer-reviewed articles
 
