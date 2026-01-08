@@ -11,9 +11,9 @@ Wan<sup>\*</sup>, Z. Y., Lopez-Gomez<sup>\*</sup>, I., Carver, R.,  Schneider, T
 
 Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2024) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *under review*. [doi](https://doi.org/10.48550/arXiv.2409.04985)
 
-Barthel Sorensen, B., Zepeda-Núñez, L., Lopez-Gomez, I., Wan, Z. Y., Carver, R., Sha, F., Sapsis, T. (2025) **A probabilistic framework for learning non-intrusive corrections to long-time climate simulations from short-time training data**, *in press, Journal of Advances in Modeling Earth Systems*. [preprint](https://doi.org/10.48550/arXiv.2408.02688)
-
 ### Peer-reviewed articles
+
+Barthel Sorensen, B., Zepeda-Núñez, L., Lopez-Gomez, I., Wan, Z. Y., Carver, R., Sha, F., Sapsis, T. (2026) **A probabilistic framework for learning non-intrusive corrections to long-time climate simulations from short-time training data**, *Journal of Advances in Modeling Earth Systems*, 18, e2024MS004755. [doi](https://doi.org/10.1029/2024MS004755)
 
 Lopez-Gomez, I., Wan, Z. Y., Zepeda-Núñez, L., Schneider, T., Anderson, J., Sha, F. (2025) **Dynamical-generative downscaling of climate model ensembles**, *Proceedings of the National Academy of Sciences*, 122, e2420288122. [doi](https://doi.org/10.1073/pnas.2420288122) [pdf](https://ilopezgp.github.io/assets/papers/lopez-gomez-et-al-dynamical-generative-downscaling-of-climate-model-ensembles.pdf)
 
