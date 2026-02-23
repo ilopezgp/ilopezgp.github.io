@@ -21,11 +21,11 @@ Christopoulos, C., Lopez-Gomez, I., Beucler, T., Cohen, Y., Kawczynski, C., Dunb
 
 Eyring, V., Collins, W., ..., Lopez-Gomez, I., ... Zanna. L. (2024) **Pushing the frontiers in climate modelling and analysis with machine learning**, *Nature Climate Change*, 14, 916-928. [doi](https://doi.org/10.1038/s41558-024-02095-y) [pdf](https://ilopezgp.github.io/assets/papers/Eyring_et_al_2024.pdf)
 
-Li, L., Carver<sup>\*</sup>, R., Lopez-Gomez<sup>\*</sup>, I., Sha, F., Anderson, J. (2024) **Generative emulation of weather forecast ensembles with diffusion models**, *Science Advances*, 10, eadk4489. [doi](https://doi.org/10.1126/sciadv.adk4489)
+Li, L., Carver<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, R., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Sha, F., Anderson, J. (2024) **Generative emulation of weather forecast ensembles with diffusion models**, *Science Advances*, 10, eadk4489. [doi](https://doi.org/10.1126/sciadv.adk4489)
 
 Lopez-Gomez, I., McGovern, A., Agrawal, S., Hickey, J. (2023) **Global extreme heat forecasting using neural weather models**, *Artificial Intelligence for the Earth Systems*, 2, e220035. [doi](https://doi.org/10.1175/AIES-D-22-0035.1)
 
-Dunbar<sup>\*</sup>, O. R. A., Lopez-Gomez<sup>\*</sup>, I., Garbuno-Iñigo, A., Huang, D. Z., Bach, E., Wu, J. (2022) **EnsembleKalmanProcesses.jl: Derivative-free ensemble-based model calibration**, *Journal of Open Source Software*, 7, 4869. [doi](https://doi.org/10.21105/joss.04869)
+Dunbar<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, O. R. A., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Garbuno-Iñigo, A., Huang, D. Z., Bach, E., Wu, J. (2022) **EnsembleKalmanProcesses.jl: Derivative-free ensemble-based model calibration**, *Journal of Open Source Software*, 7, 4869. [doi](https://doi.org/10.21105/joss.04869)
 
 Lopez-Gomez, I., Christopoulos, C., Langeland Ervik, H. L., Dunbar, O. R. A., Cohen, Y., Schneider, T. (2022) **Training physics-based machine-learning parameterizations with gradient-free ensemble Kalman methods**, *Journal of Advances in Modeling Earth Systems*, 14, e2022MS003105. [doi](https://doi.org/10.1029/2022MS003105)  [pdf](https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2022MS003105)
 
