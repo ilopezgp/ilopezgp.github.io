@@ -7,9 +7,9 @@ backup_image: stratocumulus-baja.jpg
 
 ### Preprints & submitted articles
 
-Wan<sup>\*</sup>, Z. Y., Lopez-Gomez<sup>\*</sup>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2025) **Regional climate risk assessment from climate models using probabilistic machine learning**, *under review*. [doi](https://arxiv.org/abs/2412.08079)
+Wan<sup title="Equal contribution">*</sup>, Z. Y., Lopez-Gomez<sup title="Equal contribution">*</sup>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2025) **Regional climate risk assessment from climate models using probabilistic machine learning**, *under review*. [doi](https://arxiv.org/abs/2412.08079)
 
-Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2024) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *under review*. [doi](https://doi.org/10.48550/arXiv.2409.04985)
+Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2025) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *under review*. [doi](https://doi.org/10.48550/arXiv.2409.04985)
 
 ### Peer-reviewed articles
 
