@@ -5,6 +5,10 @@ image: Human-Impact-on-the-Planet.webp
 backup_image: Human-Impact-on-the-Planet.jpg
 ---
 
+### 2026
+
+[AI ‘Scientists’ Help Human Ones Answer Urgent Climate Questions](https://www.bloomberg.com/news/articles/2026-03-13/ai-scientists-help-human-ones-answer-urgent-climate-questions?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc3MzQwNDI5NiwiZXhwIjoxNzc0MDA5MDk2LCJhcnRpY2xlSWQiOiJUQlUzVzJLR0NUSEQwMCIsImJjb25uZWN0SWQiOiJEQ0NGODY3Qzk2ODk0MzJDQjRBMEMwM0FENDNGNTJENyJ9.Ctpa5CSog_55l2339ZVv4MR2m6EXnAMqTbA7d8gR6Gg&leadSource=uverify%20wall), *Bloomberg*.
+
 ### 2025
 
 [Local predictions of climate change are hazy. But cities need answers fast](https://www.science.org/content/article/local-predictions-climate-change-are-hazy-cities-need-answers-fast), *Science*.
