@@ -684,6 +684,7 @@ th, td {
 }
 
 #publications-filter {
+  box-sizing: border-box; /* Prevents overflow due to combined padding and 100% width on mobile */
   width: 100%;
   padding: 0.75rem 1rem;
   font-size: 1rem;
