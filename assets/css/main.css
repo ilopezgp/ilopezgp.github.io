@@ -622,3 +622,53 @@ th, td {
   visibility: visible;
   opacity: 1;
 }
+
+/*
+  Publication Tags
+*/
+
+.tag-doi {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  background-color: #e3f2fd; /* Pleasant light blue */
+  color: #1565c0; /* Dark blue */
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: all 0.15s ease;
+  border: 1px solid #90caf9;
+  margin-right: 0.4rem;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.tag-doi:hover {
+  background-color: #1565c0;
+  color: #ffffff !important;
+  border-color: #1565c0;
+  text-decoration: none;
+}
+
+.tag-pdf {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  background-color: #ffebee; /* Pleasant light red/pink */
+  color: #c62828; /* Dark red */
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: all 0.15s ease;
+  border: 1px solid #ef9a9a;
+  margin-right: 0.4rem;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.tag-pdf:hover {
+  background-color: #c62828;
+  color: #ffffff !important;
+  border-color: #c62828;
+  text-decoration: none;
+}
