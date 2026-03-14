@@ -5,6 +5,7 @@
 
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function() {
+  // 1. Automatic Visual Tags for publications
   const links = document.querySelectorAll("a");
   links.forEach(link => {
     const text = link.textContent.trim().toLowerCase();
@@ -14,5 +15,29 @@ document.addEventListener("DOMContentLoaded", function() {
       link.classList.add("tag-pdf");
     }
   });
+
+  // 2. Real-Time Filter for Publications index
+  const filterInput = document.getElementById("publications-filter");
+  if (filterInput) {
+    // Find all publication blocks (paragraphs that safely contain a DOI or PDF tag!)
+    const publications = Array.from(document.querySelectorAll(".post-container p")).filter(p => {
+      return p.querySelector("a.tag-doi") || p.querySelector("a.tag-pdf");
+    });
+
+    filterInput.addEventListener("input", function() {
+      const filterValue = filterInput.value.trim().toLowerCase();
+
+      publications.forEach(pub => {
+        const text = pub.textContent.toLowerCase();
+        
+        if (text.includes(filterValue)) {
+          pub.classList.remove("publication-hidden");
+          pub.style.opacity = "1"; // Smooth transition if you want!
+        } else {
+          pub.classList.add("publication-hidden");
+        }
+      });
+    });
+  }
 });
 </script>

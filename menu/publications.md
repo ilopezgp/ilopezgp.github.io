@@ -4,7 +4,9 @@ title: Publications & Conferences
 image: stratocumulus-baja.webp
 backup_image: stratocumulus-baja.jpg
 ---
-
+<div class="filter-container">
+  <input type="text" id="publications-filter" placeholder="Filter by keyword, author, or year..." aria-label="Filter publications">
+</div>
 ### Preprints & submitted articles
 
 Wan<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, Z. Y., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2025) **Regional climate risk assessment from climate models using probabilistic machine learning**, *under review*. [doi](https://arxiv.org/abs/2412.08079)
