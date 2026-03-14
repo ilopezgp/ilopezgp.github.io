@@ -2,3 +2,17 @@
   {% include social-icons.html %}
   <div class="post-date"><a href="{{ site.github.url }}/">{{ site.title }} | All rights reserved. </a></div>
 </footer>
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  const links = document.querySelectorAll("a");
+  links.forEach(link => {
+    const text = link.textContent.trim().toLowerCase();
+    if (text === "doi") {
+      link.classList.add("tag-doi");
+    } else if (text === "pdf") {
+      link.classList.add("tag-pdf");
+    }
+  });
+});
+</script>
