@@ -672,3 +672,43 @@ th, td {
   border-color: #c62828;
   text-decoration: none;
 }
+
+/* 
+  Publications Filter 
+*/
+
+.filter-container {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+#publications-filter {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #333;
+}
+
+#publications-filter:focus {
+  outline: none;
+  border-color: #1565c0; /* Match the Blue tag color */
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05), 0 0 0 3px rgba(21, 101, 192, 0.2);
+}
+
+#publications-filter::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+/* Hidden state for filtered items */
+.publication-hidden {
+  display: none !important;
+}
