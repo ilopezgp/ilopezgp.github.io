@@ -5,12 +5,87 @@
 
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function() {
-  // 1. Automatic Visual Tags for publications
+  // 1. Automatic Visual Tags for publications & Auto-Cite Button
   const links = document.querySelectorAll("a");
   links.forEach(link => {
     const text = link.textContent.trim().toLowerCase();
     if (text === "doi") {
       link.classList.add("tag-doi");
+      
+      // Create Cite Button
+      const btn = document.createElement("span");
+      btn.className = "cite-btn";
+      btn.textContent = "Cite";
+      btn.title = "Copy official BibTeX citation";
+      link.parentNode.insertBefore(btn, link.nextSibling);
+
+      // Click handler
+      btn.addEventListener("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const url = link.href;
+        let doi = "";
+        
+        // Extract DOI from URL
+        const doiMatch = url.match(/doi\.org\/(10\.\d{4,9}\/[-._;()/:A-Za-z0-9]+)/);
+        if (doiMatch) {
+          doi = doiMatch[1];
+        } else {
+          const genericMatch = url.match(/\/(10\.\d{4,9}\/[-._;()/:A-Za-z0-9]+)/);
+          if (genericMatch) doi = genericMatch[1];
+        }
+
+        const fallbackCopy = () => {
+          // Robust fallback using execCommand
+          const el = document.createElement('textarea');
+          el.value = url;
+          el.style.position = 'absolute';
+          el.style.left = '-9999px';
+          document.body.appendChild(el);
+          el.select();
+          try {
+            document.execCommand('copy');
+            btn.textContent = "URL Copied!";
+          } catch (err) {
+            console.error('Fallback copy failed', err);
+            btn.textContent = "Copy Failed";
+          }
+          document.body.removeChild(el);
+          
+          btn.classList.add("error");
+          setTimeout(() => {
+            btn.textContent = "Cite";
+            btn.classList.remove("error");
+          }, 2000);
+        };
+
+        if (!doi) {
+          fallbackCopy();
+          return;
+        }
+
+        btn.textContent = "Loading...";
+        fetch(`https://api.crossref.org/works/${doi}/transform/application/x-bibtex`)
+          .then(response => {
+            if (!response.ok) throw new Error("Not found");
+            return response.text();
+          })
+          .then(bibtex => {
+            navigator.clipboard.writeText(bibtex).then(() => {
+              btn.textContent = "Copied!";
+              btn.classList.add("copied");
+              setTimeout(() => {
+                btn.textContent = "Cite";
+                btn.classList.remove("copied");
+              }, 2000);
+            });
+          })
+          .catch(err => {
+            console.error("Cite fetch failed:", err);
+            fallbackCopy();
+          });
+      });
     } else if (text === "pdf") {
       link.classList.add("tag-pdf");
     }
