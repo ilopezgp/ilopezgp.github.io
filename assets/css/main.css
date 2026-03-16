@@ -717,6 +717,89 @@ th, td {
 /* 
   Cite Button 
 */
+/* ... existing cite button styles ... */
+
+/* 
+  Post Thumbnails 
+*/
+
+.post-list-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.post-list-item:last-child {
+  border-bottom: none;
+}
+
+.post-thumbnail {
+  flex: 0 0 120px; /* Fixed width for thumbnail */
+  margin-right: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.thumbnail-img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.thumbnail-img:hover {
+  transform: scale(1.03);
+}
+
+.post-details {
+  flex: 1; /* Take remaining space */
+}
+
+.post-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+  line-height: 1.4;
+}
+
+.post-title:hover {
+  color: #1565c0; /* Match theme blue */
+}
+
+.post-list-item .post-date {
+  margin-top: 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustment */
+@media (max-width: 500px) {
+  .post-list-item {
+    flex-direction: column;
+  }
+  
+  .post-thumbnail {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+  .thumbnail-img {
+    width: 100%;
+    height: 150px; /* Taller on mobile when stacked */
+  }
+}
+
+/* 
+  Cite Button 
+*/
 
 .cite-btn {
   display: inline-block;
