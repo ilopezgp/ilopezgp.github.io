@@ -798,6 +798,20 @@ th, td {
 }
 
 /* 
+  Media Source Logos 
+*/
+.media-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  margin-right: 12px;
+  object-fit: contain;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background-color: #fff; /* Ensure logo is visible if transparent */
+  flex-shrink: 0; /* Prevents the logo from shrinking on narrow screens */
+}
+
+/* 
   Cite Button 
 */
 

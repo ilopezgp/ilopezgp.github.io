@@ -114,5 +114,30 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
+
+  // 3. Media Source Logos
+  if (window.location.pathname.includes('media')) {
+    const mediaLinks = document.querySelectorAll(".post-container p a");
+    mediaLinks.forEach(link => {
+      try {
+        const url = new URL(link.href);
+        const hostname = url.hostname;
+        
+        const logo = document.createElement("img");
+        logo.src = `https://www.google.com/s2/favicons?domain=${hostname}&sz=128`;
+        logo.className = "media-logo";
+        logo.alt = `${hostname} logo`;
+        
+        // Ensure parent p tag is a flex container for nice alignment
+        link.parentNode.style.display = 'flex';
+        link.parentNode.style.alignItems = 'center';
+        link.parentNode.style.marginBottom = '1.25rem';
+        
+        link.parentNode.insertBefore(logo, link);
+      } catch (e) {
+        // invalid URL or relative link, ignore
+      }
+    });
+  }
 });
 </script>
