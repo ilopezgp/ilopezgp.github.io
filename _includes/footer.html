@@ -129,8 +129,13 @@ document.addEventListener("DOMContentLoaded", function() {
           if (parts[parts.length - 2].length <= 3 && parts[parts.length - 1].length <= 3) {
             baseDomain = parts.slice(-3).join('.'); // e.g., bbc.co.uk
           } else {
-            baseDomain = parts.slice(-2).join('.'); // e.g., research.google.com -> google.com
+            baseDomain = parts.slice(-2).join('.'); // e.g., blog.google.com -> google.com
           }
+        }
+        
+        // Special case for .google TLD (e.g., research.google, blog.google)
+        if (baseDomain.endsWith('.google')) {
+          baseDomain = 'google.com';
         }
         
         const logo = document.createElement("img");
@@ -140,10 +145,11 @@ document.addEventListener("DOMContentLoaded", function() {
         // Try getting a high-res logo from Clearbit using the base domain
         logo.src = `https://logo.clearbit.com/${baseDomain}`;
         
-        // Fallback to Google favicons using the original hostname if Clearbit doesn't have it
+        // Fallback to Google favicons using the baseDomain if Clearbit doesn't have it
         logo.onerror = function() {
-          if (!this.src.includes('google.com')) {
-            this.src = `https://www.google.com/s2/favicons?domain=${hostname}&sz=128`;
+          // Prevent infinite loop if fallback also fails
+          if (!this.src.includes('s2/favicons')) { 
+            this.src = `https://www.google.com/s2/favicons?domain=${baseDomain}&sz=128`;
           }
         };
         
