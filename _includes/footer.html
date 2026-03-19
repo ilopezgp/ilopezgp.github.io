@@ -128,9 +128,9 @@ document.addEventListener("DOMContentLoaded", function() {
         logo.className = "media-logo";
         logo.alt = `${hostname} logo`;
         
-        // Ensure parent p tag is a flex container for nice alignment
-        link.parentNode.style.display = 'flex';
-        link.parentNode.style.alignItems = 'center';
+        // Ensure text nodes don't detach by using inline layout instead of flex on the paragraph
+        logo.style.verticalAlign = 'middle';
+        logo.style.marginRight = '12px';
         link.parentNode.style.marginBottom = '1.25rem';
         
         link.parentNode.insertBefore(logo, link);
