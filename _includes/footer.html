@@ -128,12 +128,26 @@ document.addEventListener("DOMContentLoaded", function() {
         logo.className = "media-logo";
         logo.alt = `${hostname} logo`;
         
-        // Ensure text nodes don't detach by using inline layout instead of flex on the paragraph
-        logo.style.verticalAlign = 'middle';
-        logo.style.marginRight = '12px';
-        link.parentNode.style.marginBottom = '1.25rem';
+        // Skip if already processed (e.g., multiple links)
+        if (link.parentNode.classList.contains('media-text-content')) return;
+
+        const parentP = link.parentNode;
         
-        link.parentNode.insertBefore(logo, link);
+        // Create wrapper for text to avoid detaching text nodes under flex layout
+        const textWrapper = document.createElement('div');
+        textWrapper.className = 'media-text-content';
+        
+        while (parentP.firstChild) {
+          textWrapper.appendChild(parentP.firstChild);
+        }
+        
+        parentP.appendChild(textWrapper);
+        parentP.appendChild(logo);
+        
+        parentP.style.display = 'flex';
+        parentP.style.alignItems = 'center';
+        parentP.style.justifyContent = 'space-between';
+        parentP.style.marginBottom = '1.5rem';
       } catch (e) {
         // invalid URL or relative link, ignore
       }
