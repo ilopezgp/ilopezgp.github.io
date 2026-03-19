@@ -124,9 +124,18 @@ document.addEventListener("DOMContentLoaded", function() {
         const hostname = url.hostname;
         
         const logo = document.createElement("img");
-        logo.src = `https://www.google.com/s2/favicons?domain=${hostname}&sz=128`;
         logo.className = "media-logo";
         logo.alt = `${hostname} logo`;
+        
+        // Try getting a high-res logo from Clearbit first
+        logo.src = `https://logo.clearbit.com/${hostname}`;
+        
+        // Fallback to Google favicons if Clearbit doesn't have it
+        logo.onerror = function() {
+          if (!this.src.includes('google.com')) {
+            this.src = `https://www.google.com/s2/favicons?domain=${hostname}&sz=128`;
+          }
+        };
         
         // Skip if already processed (e.g., multiple links)
         if (link.parentNode.classList.contains('media-text-content')) return;
