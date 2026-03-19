@@ -114,5 +114,74 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
+
+  // 3. Media Source Logos
+  if (window.location.pathname.includes('media')) {
+    const mediaLinks = document.querySelectorAll(".post-container p a");
+    mediaLinks.forEach(link => {
+      try {
+        const url = new URL(link.href);
+        const hostname = url.hostname;
+        
+        let baseDomain = hostname;
+        const parts = hostname.split('.');
+        if (parts.length > 2) {
+          if (parts[parts.length - 2].length <= 3 && parts[parts.length - 1].length <= 3) {
+            baseDomain = parts.slice(-3).join('.'); // e.g., bbc.co.uk
+          } else {
+            baseDomain = parts.slice(-2).join('.'); // e.g., blog.google.com -> google.com
+          }
+        }
+        
+        // Special case for .google TLD (e.g., research.google, blog.google)
+        if (baseDomain.endsWith('.google')) {
+          baseDomain = 'google.com';
+        }
+        
+        // Exception for subdomains with distinct high-res logos
+        if (hostname.includes('clima.caltech')) {
+          baseDomain = hostname;
+        }
+        
+        const logo = document.createElement("img");
+        logo.className = "media-logo";
+        logo.alt = `${baseDomain} logo`;
+        
+        // Try getting a high-res logo from Clearbit using the base domain
+        logo.src = `https://logo.clearbit.com/${baseDomain}`;
+        
+        // Fallback to Google favicons using the baseDomain if Clearbit doesn't have it
+        logo.onerror = function() {
+          // Prevent infinite loop if fallback also fails
+          if (!this.src.includes('s2/favicons')) { 
+            this.src = `https://www.google.com/s2/favicons?domain=${baseDomain}&sz=128`;
+          }
+        };
+        
+        // Skip if already processed (e.g., multiple links)
+        if (link.parentNode.classList.contains('media-text-content')) return;
+
+        const parentP = link.parentNode;
+        
+        // Create wrapper for text to avoid detaching text nodes under flex layout
+        const textWrapper = document.createElement('div');
+        textWrapper.className = 'media-text-content';
+        
+        while (parentP.firstChild) {
+          textWrapper.appendChild(parentP.firstChild);
+        }
+        
+        parentP.appendChild(textWrapper);
+        parentP.appendChild(logo);
+        
+        parentP.style.display = 'flex';
+        parentP.style.alignItems = 'center';
+        parentP.style.justifyContent = 'space-between';
+        parentP.style.marginBottom = '1.5rem';
+      } catch (e) {
+        // invalid URL or relative link, ignore
+      }
+    });
+  }
 });
 </script>
