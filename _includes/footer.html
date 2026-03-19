@@ -138,6 +138,11 @@ document.addEventListener("DOMContentLoaded", function() {
           baseDomain = 'google.com';
         }
         
+        // Exception for subdomains with distinct high-res logos
+        if (hostname.includes('clima.caltech')) {
+          baseDomain = hostname;
+        }
+        
         const logo = document.createElement("img");
         logo.className = "media-logo";
         logo.alt = `${baseDomain} logo`;
