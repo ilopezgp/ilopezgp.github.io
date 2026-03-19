@@ -123,14 +123,24 @@ document.addEventListener("DOMContentLoaded", function() {
         const url = new URL(link.href);
         const hostname = url.hostname;
         
+        let baseDomain = hostname;
+        const parts = hostname.split('.');
+        if (parts.length > 2) {
+          if (parts[parts.length - 2].length <= 3 && parts[parts.length - 1].length <= 3) {
+            baseDomain = parts.slice(-3).join('.'); // e.g., bbc.co.uk
+          } else {
+            baseDomain = parts.slice(-2).join('.'); // e.g., research.google.com -> google.com
+          }
+        }
+        
         const logo = document.createElement("img");
         logo.className = "media-logo";
-        logo.alt = `${hostname} logo`;
+        logo.alt = `${baseDomain} logo`;
         
-        // Try getting a high-res logo from Clearbit first
-        logo.src = `https://logo.clearbit.com/${hostname}`;
+        // Try getting a high-res logo from Clearbit using the base domain
+        logo.src = `https://logo.clearbit.com/${baseDomain}`;
         
-        // Fallback to Google favicons if Clearbit doesn't have it
+        // Fallback to Google favicons using the original hostname if Clearbit doesn't have it
         logo.onerror = function() {
           if (!this.src.includes('google.com')) {
             this.src = `https://www.google.com/s2/favicons?domain=${hostname}&sz=128`;
