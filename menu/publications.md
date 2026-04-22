@@ -7,17 +7,16 @@ backup_image: stratocumulus-baja.jpg
 <div class="filter-container">
   <input type="text" id="publications-filter" placeholder="Filter by keyword, author, or year..." aria-label="Filter publications">
 </div>
-### Preprints & submitted articles
 
-Wan<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, Z. Y., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2025) **Regional climate risk assessment from climate models using probabilistic machine learning**, *under review*. [doi](https://arxiv.org/abs/2412.08079)
+### Publications
 
-Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2025) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *under review*. [doi](https://doi.org/10.48550/arXiv.2409.04985)
-
-### Peer-reviewed articles
+Wan<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, Z. Y., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2025) **Regional climate risk assessment from climate models using probabilistic machine learning**, *arXiv*. [doi](https://arxiv.org/abs/2412.08079)
 
 Barthel Sorensen, B., Zepeda-Núñez, L., Lopez-Gomez, I., Wan, Z. Y., Carver, R., Sha, F., Sapsis, T. (2026) **A probabilistic framework for learning non-intrusive corrections to long-time climate simulations from short-time training data**, *Journal of Advances in Modeling Earth Systems*, 18, e2024MS004755. [doi](https://doi.org/10.1029/2024MS004755)
 
 Lopez-Gomez, I., Wan, Z. Y., Zepeda-Núñez, L., Schneider, T., Anderson, J., Sha, F. (2025) **Dynamical-generative downscaling of climate model ensembles**, *Proceedings of the National Academy of Sciences*, 122, e2420288122. [doi](https://doi.org/10.1073/pnas.2420288122) [pdf](https://ilopezgp.github.io/assets/papers/lopez-gomez-et-al-dynamical-generative-downscaling-of-climate-model-ensembles.pdf)
+
+Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2025) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *arXiv*. [doi](https://doi.org/10.48550/arXiv.2409.04985)
 
 Christopoulos, C., Lopez-Gomez, I., Beucler, T., Cohen, Y., Kawczynski, C., Dunbar, O. R. A., Schneider, T. (2024) **Online learning of entrainment closures in a hybrid machine learning parameterization**, *Journal of Advances in Modeling Earth Systems*, 16, e2024MS004485. [doi](https://doi.org/10.1029/2024MS004485)
 
