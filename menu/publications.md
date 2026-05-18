@@ -10,6 +10,8 @@ backup_image: stratocumulus-baja.jpg
 
 ### Publications
 
+Lopez-Gomez, I., Brenner, M. P., Schneider, T. (2026) **Probabilistic Seasonal Streamflow Forecasting Across California’s Sierra Nevada Watersheds with Agentic AI**, *arXiv*. [doi](https://arxiv.org/abs/2605.16178)
+
 Henn, B., Bretherton, C., Kodunov, N., ..., Lopez-Gomez, I. (2026) **AIMIP Phase 1: systematic evaluations of AI weather and climate models**, *arXiv*. [doi](https://arxiv.org/abs/2605.06944)
 
 Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2026) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *in press, Physical Review Research*. [doi](https://doi.org/10.48550/arXiv.2409.04985)
