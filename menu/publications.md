@@ -14,7 +14,8 @@ Lopez-Gomez, I., Brenner, M. P., Schneider, T. (2026) **Probabilistic Seasonal S
 
 Henn, B., Bretherton, C., Kodunov, N., ..., Lopez-Gomez, I. (2026) **AIMIP Phase 1: systematic evaluations of AI weather and climate models**, *arXiv*. [doi](https://arxiv.org/abs/2605.06944)
 
-Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2026) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *in press, Physical Review Research*. [doi](https://doi.org/10.48550/arXiv.2409.04985)
+Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2026) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *Physical Review Research*, 8, 023215. [doi](https://doi.org/10.1103/mnbm-3g56
+)
 
 Wan<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, Z. Y., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2025) **Regional climate risk assessment from climate models using probabilistic machine learning**, *arXiv*. [doi](https://arxiv.org/abs/2412.08079)
 
