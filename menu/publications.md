@@ -46,7 +46,7 @@ del Pozo, D., Lopez-Gomez, I., Romero, I. (2019) **A robust asymmetrical contact
 
 ### Conference presentations & talks
 
-Panelist, *The Rise of Agentic AI: What It Means for Climate Innovation*, 24 September 2026, Columbia University, New York City, NY.
+Developing Seasonal Streamflow Forecasting Models with Agentic Research Assistants, *The Rise of Agentic AI: What It Means for Climate Innovation*, 24 September 2026, Columbia University, New York City, NY. [Website](https://columbiaengineering.campusgroups.com/CWCE/rsvp_boot?id=376001)
 
 GenAI for Downscaling. *GenAI for Climate Science: A LEAP Science and Technology Center-hosted Panel*, 25 September 2025, Columbia University, New York City, NY. [Website](https://ai.columbia.edu/events/genai-climate-science)
 
