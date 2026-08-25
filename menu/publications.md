@@ -10,6 +10,8 @@ backup_image: stratocumulus-baja.jpg
 
 ### Publications
 
+Stamatelopoulos, S., Wang, M., Lopez-Gomez, I., Zepeda-Núñez, L., Wan., Z. Y., Carver, R., Sha, F., Sapsis, T. (2026) **DySCo: Dynamically consistent data-driven downscaling of extremes in climate projections**, *arXiv*. [doi](https://arxiv.org/abs/2608.21998)
+
 Lopez-Gomez, I., Brenner, M. P., Schneider, T. (2026) **Probabilistic Seasonal Streamflow Forecasting Across California’s Sierra Nevada Watersheds with Agentic AI**, *arXiv*. [doi](https://arxiv.org/abs/2605.16178)
 
 Henn, B., Bretherton, C., Kodunov, N., ..., Lopez-Gomez, I. (2026) **AIMIP Phase 1: systematic evaluations of AI weather and climate models**, *arXiv*. [doi](https://arxiv.org/abs/2605.06944)
