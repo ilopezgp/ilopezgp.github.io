@@ -10,6 +10,8 @@ backup_image: stratocumulus-baja.jpg
 
 ### Publications
 
+Wan<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, Z. Y., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2026) **Regional climate risk assessment from climate models using probabilistic machine learning**, in press, *Nature Machine Intelligence*. [preprint](https://arxiv.org/abs/2412.08079)
+
 Stamatelopoulos, S., Wang, M., Lopez-Gomez, I., Zepeda-Núñez, L., Wan., Z. Y., Carver, R., Sha, F., Sapsis, T. (2026) **DySCo: Dynamically consistent data-driven downscaling of extremes in climate projections**, *arXiv*. [doi](https://arxiv.org/abs/2608.21998)
 
 Lopez-Gomez, I., Brenner, M. P., Schneider, T. (2026) **Probabilistic Seasonal Streamflow Forecasting Across California’s Sierra Nevada Watersheds with Agentic AI**, *arXiv*. [doi](https://arxiv.org/abs/2605.16178)
@@ -17,8 +19,6 @@ Lopez-Gomez, I., Brenner, M. P., Schneider, T. (2026) **Probabilistic Seasonal S
 Henn, B., Bretherton, C., Kodunov, N., ..., Lopez-Gomez, I. (2026) **AIMIP Phase 1: systematic evaluations of AI weather and climate models**, *arXiv*. [doi](https://arxiv.org/abs/2605.06944)
 
 Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2026) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *Physical Review Research*, 8, 023215. [doi](https://doi.org/10.1103/mnbm-3g56)
-
-Wan<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, Z. Y., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2025) **Regional climate risk assessment from climate models using probabilistic machine learning**, *arXiv*. [doi](https://arxiv.org/abs/2412.08079)
 
 Barthel Sorensen, B., Zepeda-Núñez, L., Lopez-Gomez, I., Wan, Z. Y., Carver, R., Sha, F., Sapsis, T. (2026) **A probabilistic framework for learning non-intrusive corrections to long-time climate simulations from short-time training data**, *Journal of Advances in Modeling Earth Systems*, 18, e2024MS004755. [doi](https://doi.org/10.1029/2024MS004755)
 
