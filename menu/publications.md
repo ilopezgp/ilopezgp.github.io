@@ -10,7 +10,7 @@ backup_image: stratocumulus-baja.jpg
 
 ### Publications
 
-Wan<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, Z. Y., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2026) **Regional climate risk assessment from climate models using probabilistic machine learning**, in press, *Nature Machine Intelligence*. [doi](https://arxiv.org/abs/2412.08079)
+Wan<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, Z. Y., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2026) **Regional climate risk assessment from climate models using probabilistic machine learning**, *Nature Machine Intelligence*. [doi](https://doi.org/10.1038/s42256-026-01308-7)
 
 Stamatelopoulos, S., Wang, M., Lopez-Gomez, I., Zepeda-Núñez, L., Wan., Z. Y., Carver, R., Sha, F., Sapsis, T. (2026) **DySCo: Dynamically consistent data-driven downscaling of extremes in climate projections**, *arXiv*. [doi](https://arxiv.org/abs/2608.21998)
 
@@ -48,7 +48,9 @@ del Pozo, D., Lopez-Gomez, I., Romero, I. (2019) **A robust asymmetrical contact
 
 ### Conference presentations & talks
 
-Developing Seasonal Streamflow Forecasting Models with Agentic Research Assistants, *The Rise of Agentic AI: What It Means for Climate Innovation*, 24 September 2026, Columbia University, New York City, NY. [website](https://columbiaengineering.campusgroups.com/CWCE/rsvp_boot?id=376001)
+Generative downscaling of climate projection ensembles, *AI for Climate Downscaling Southeast Asia Workshop*, 19-22 October 2026, Centre for Climate Research Singapore, Singapore.
+
+Developing Seasonal Streamflow Forecasting Models with Agentic Research Assistants, *The Rise of Agentic AI: What It Means for Climate Innovation*, 24 September 2026, Columbia University, New York City, NY. [website](https://www.climate.columbia.edu/events/rise-agentic-ai-what-it-means-climate-innovation)
 
 GenAI for Downscaling. *GenAI for Climate Science: A LEAP Science and Technology Center-hosted Panel*, 25 September 2025, Columbia University, New York City, NY. [website](https://ai.columbia.edu/events/genai-climate-science)
 
