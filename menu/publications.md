@@ -48,6 +48,10 @@ del Pozo, D., Lopez-Gomez, I., Romero, I. (2019) **A robust asymmetrical contact
 
 ### Conference presentations & talks
 
+Bridging Global Foundation Models and Real-World Applications with Agentic AI. *American Geophysical Union, Fall Meeting 2026*, 7-11 December 2026, San Francisco, CA [abstract](https://studio.m-anage.com/agu/agu26/meetingapp.cgi/Paper/2083181)
+
+Operational Seasonal Streamflow Forecasting in California with Agentic AI and Physics-Informed Feature Engineering. *American Geophysical Union, Fall Meeting 2026*, 7-11 December 2026, San Francisco, CA [abstract](https://studio.m-anage.com/agu/agu26/meetingapp.cgi/Paper/2078640)
+
 Generative downscaling of climate projection ensembles, *AI for Climate Downscaling Southeast Asia Workshop*, 19-22 October 2026, Centre for Climate Research Singapore, Singapore.
 
 Developing Seasonal Streamflow Forecasting Models with Agentic Research Assistants, *The Rise of Agentic AI: What It Means for Climate Innovation*, 24 September 2026, Columbia University, New York City, NY. [website](https://www.climate.columbia.edu/events/rise-agentic-ai-what-it-means-climate-innovation)
