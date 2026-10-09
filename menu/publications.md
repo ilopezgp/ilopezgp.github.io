@@ -10,6 +10,8 @@ backup_image: stratocumulus-baja.jpg
 
 ### Publications
 
+Beucler, T., Neelin, J. D., Su, H., Asthana, S., Bretherton, C., Chapman, W., Christopoulos, C., Clark, S. K., Grover, A., Lopez-Gomez, I., Schneider, T., Subel, A., Watt-Meyer, O. (2026) **Artificial intelligence pathways from weather to climate**, *arXiv*. [doi](https://arxiv.org/abs/2610.09770)
+
 Wan<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, Z. Y., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2026) **Regional climate risk assessment from climate models using probabilistic machine learning**, *Nature Machine Intelligence*. [doi](https://doi.org/10.1038/s42256-026-01308-7)
 
 Stamatelopoulos, S., Wang, M., Lopez-Gomez, I., Zepeda-Núñez, L., Wan., Z. Y., Carver, R., Sha, F., Sapsis, T. (2026) **DySCo: Dynamically consistent data-driven downscaling of extremes in climate projections**, *arXiv*. [doi](https://arxiv.org/abs/2608.21998)
