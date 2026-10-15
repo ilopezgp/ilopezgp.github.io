@@ -7,6 +7,8 @@ backup_image: Human-Impact-on-the-Planet.jpg
 
 ### 2026
 
+[An AI Model Sharpens Global Climate Projections Down to a City's Scale](https://allatra.media/news/ai-tech-genfocal-climate-downscaling), *ALLATRA Media*.
+
 [Using AI to predict the weather](https://www.pnas.org/post/podcast/using-ai-predict-weather), *PNAS Science Sessions Podcast*.
 
 [Empirical Research Assistance (ERA): From Nature publication to catalyzing Computational Discovery](https://research.google/blog/empirical-research-assistance-era-from-nature-publication-to-catalyzing-computational-discovery/), *Google Research Blog*.
