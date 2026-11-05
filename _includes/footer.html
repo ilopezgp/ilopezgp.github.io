@@ -29,116 +29,118 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   };
 
-  const links = document.querySelectorAll("a");
-  links.forEach(link => {
-    const text = link.textContent.trim().toLowerCase();
-    if (text === "doi" || text === "arxiv") {
-      link.classList.add(text === "doi" ? "tag-doi" : "tag-arxiv");
+  if (window.location.pathname.includes('publications')) {
+    const links = document.querySelectorAll(".post-container a");
+    links.forEach(link => {
+      const text = link.textContent.trim().toLowerCase();
+      if (text === "doi" || text === "arxiv") {
+        link.classList.add(text === "doi" ? "tag-doi" : "tag-arxiv");
 
-      // Avoid adding duplicate Cite buttons if a paper lists both [doi] and [arxiv]
-      if (link.parentNode && link.parentNode.querySelector(".cite-btn")) {
-        return;
-      }
-
-      // Create Cite Button
-      const btn = document.createElement("span");
-      btn.className = "cite-btn";
-      btn.textContent = "Cite";
-      btn.title = "Copy official BibTeX citation";
-      link.parentNode.insertBefore(btn, link.nextSibling);
-
-      // Click handler
-      btn.addEventListener("click", function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const url = link.href;
-        let doi = "";
-        let arxivId = "";
-
-        // Extract arXiv ID if this is an arXiv URL or 10.48550/arXiv.* DOI
-        const arxivUrlMatch = url.match(/arxiv\.org\/(?:abs|pdf)\/([0-9]{4}\.[0-9]{4,5}(?:v\d+)?|[a-z-]+\/[0-9]{7}(?:v\d+)?)/i);
-        const arxivDoiMatch = url.match(/10\.48550\/arXiv\.([0-9]{4}\.[0-9]{4,5}|[a-z-]+\/[0-9]{7})/i);
-        if (arxivUrlMatch) {
-          arxivId = arxivUrlMatch[1].replace(/v\d+$/i, "");
-        } else if (arxivDoiMatch) {
-          arxivId = arxivDoiMatch[1];
-        } else {
-          // Extract standard Crossref DOI from URL
-          const doiMatch = url.match(/doi\.org\/(10\.\d{4,9}\/[-._;()/:A-Za-z0-9]+)/);
-          if (doiMatch) {
-            doi = doiMatch[1];
-          } else {
-            const genericMatch = url.match(/\/(10\.\d{4,9}\/[-._;()/:A-Za-z0-9]+)/);
-            if (genericMatch) doi = genericMatch[1];
-          }
-        }
-
-        const fallbackCopy = () => {
-          copyTextToClipboard(url)
-            .then(() => {
-              btn.textContent = "URL Copied!";
-            })
-            .catch(() => {
-              btn.textContent = "Copy Failed";
-            });
-
-          btn.classList.add("error");
-          setTimeout(() => {
-            btn.textContent = "Cite";
-            btn.classList.remove("error");
-          }, 2000);
-        };
-
-        if (!doi && !arxivId) {
-          fallbackCopy();
+        // Avoid adding duplicate Cite buttons if a paper lists both [doi] and [arxiv]
+        if (link.parentNode && link.parentNode.querySelector(".cite-btn")) {
           return;
         }
 
-        btn.textContent = "Loading...";
-        const fetchBibtex = arxivId
-          ? fetch(`https://api.datacite.org/dois/application/x-bibtex/10.48550/arXiv.${encodeURIComponent(arxivId)}`)
-              .then(response => {
-                if (!response.ok) throw new Error("Not found");
-                return response.text();
+        // Create Cite Button
+        const btn = document.createElement("span");
+        btn.className = "cite-btn";
+        btn.textContent = "Cite";
+        btn.title = "Copy official BibTeX citation";
+        link.parentNode.insertBefore(btn, link.nextSibling);
+
+        // Click handler
+        btn.addEventListener("click", function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          const url = link.href;
+          let doi = "";
+          let arxivId = "";
+
+          // Extract arXiv ID if this is an arXiv URL or 10.48550/arXiv.* DOI
+          const arxivUrlMatch = url.match(/arxiv\.org\/(?:abs|pdf)\/([0-9]{4}\.[0-9]{4,5}(?:v\d+)?|[a-z-]+\/[0-9]{7}(?:v\d+)?)/i);
+          const arxivDoiMatch = url.match(/10\.48550\/arXiv\.([0-9]{4}\.[0-9]{4,5}|[a-z-]+\/[0-9]{7})/i);
+          if (arxivUrlMatch) {
+            arxivId = arxivUrlMatch[1].replace(/v\d+$/i, "");
+          } else if (arxivDoiMatch) {
+            arxivId = arxivDoiMatch[1];
+          } else {
+            // Extract standard Crossref DOI from URL
+            const doiMatch = url.match(/doi\.org\/(10\.\d{4,9}\/[-._;()/:A-Za-z0-9]+)/);
+            if (doiMatch) {
+              doi = doiMatch[1];
+            } else {
+              const genericMatch = url.match(/\/(10\.\d{4,9}\/[-._;()/:A-Za-z0-9]+)/);
+              if (genericMatch) doi = genericMatch[1];
+            }
+          }
+
+          const fallbackCopy = () => {
+            copyTextToClipboard(url)
+              .then(() => {
+                btn.textContent = "URL Copied!";
               })
-              .then(bibtex => {
-                // Normalize DataCite URL-style cite key to a clean BibTeX key
-                return bibtex.replace(
-                  /^@(\w+)\{https?:\/\/doi\.org\/10\.48550\/arxiv\.([^,\s]+),/i,
-                  "@$1{arXiv:$2,"
-                );
-              })
-          : fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}/transform/application/x-bibtex`)
-              .then(response => {
-                if (!response.ok) throw new Error("Not found");
-                return response.text();
+              .catch(() => {
+                btn.textContent = "Copy Failed";
               });
 
-        fetchBibtex
-          .then(bibtex => copyTextToClipboard(bibtex))
-          .then(() => {
-            btn.textContent = "Copied!";
-            btn.classList.add("copied");
+            btn.classList.add("error");
             setTimeout(() => {
               btn.textContent = "Cite";
-              btn.classList.remove("copied");
+              btn.classList.remove("error");
             }, 2000);
-          })
-          .catch(() => {
+          };
+
+          if (!doi && !arxivId) {
             fallbackCopy();
-          });
-      });
-    } else if (text === "pdf") {
-      link.classList.add("tag-pdf");
-    } else if (text === "cover") {
-      link.classList.add("tag-cover");
-    } else if (text === "abstract") {
-      link.classList.add("tag-abstract");
-    } else if (text === "website") {
-      link.classList.add("tag-website");
-    }
-  });
+            return;
+          }
+
+          btn.textContent = "Loading...";
+          const fetchBibtex = arxivId
+            ? fetch(`https://api.datacite.org/dois/application/x-bibtex/10.48550/arXiv.${encodeURIComponent(arxivId)}`)
+                .then(response => {
+                  if (!response.ok) throw new Error("Not found");
+                  return response.text();
+                })
+                .then(bibtex => {
+                  // Normalize DataCite URL-style cite key to a clean BibTeX key
+                  return bibtex.replace(
+                    /^@(\w+)\{https?:\/\/doi\.org\/10\.48550\/arxiv\.([^,\s]+),/i,
+                    "@$1{arXiv:$2,"
+                  );
+                })
+            : fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}/transform/application/x-bibtex`)
+                .then(response => {
+                  if (!response.ok) throw new Error("Not found");
+                  return response.text();
+                });
+
+          fetchBibtex
+            .then(bibtex => copyTextToClipboard(bibtex))
+            .then(() => {
+              btn.textContent = "Copied!";
+              btn.classList.add("copied");
+              setTimeout(() => {
+                btn.textContent = "Cite";
+                btn.classList.remove("copied");
+              }, 2000);
+            })
+            .catch(() => {
+              fallbackCopy();
+            });
+        });
+      } else if (text === "pdf") {
+        link.classList.add("tag-pdf");
+      } else if (text === "cover") {
+        link.classList.add("tag-cover");
+      } else if (text === "abstract") {
+        link.classList.add("tag-abstract");
+      } else if (text === "website") {
+        link.classList.add("tag-website");
+      }
+    });
+  }
 
   // 2. Real-Time Filter for Publications index
   const filterInput = document.getElementById("publications-filter");
