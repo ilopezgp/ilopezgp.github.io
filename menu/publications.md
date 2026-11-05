@@ -10,15 +10,15 @@ backup_image: stratocumulus-baja.jpg
 
 ### Publications
 
-Beucler, T., Neelin, J. D., Su, H., Asthana, S., Bretherton, C., Chapman, W., Christopoulos, C., Clark, S. K., Grover, A., Lopez-Gomez, I., Schneider, T., Subel, A., Watt-Meyer, O. (2026) **Artificial intelligence pathways from weather to climate**, *arXiv*. [doi](https://arxiv.org/abs/2610.09770)
+Beucler, T., Neelin, J. D., Su, H., Asthana, S., Bretherton, C., Chapman, W., Christopoulos, C., Clark, S. K., Grover, A., Lopez-Gomez, I., Schneider, T., Subel, A., Watt-Meyer, O. (2026) **Artificial intelligence pathways from weather to climate**, *arXiv*. [arxiv](https://arxiv.org/abs/2610.09770)
 
 Wan<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, Z. Y., Lopez-Gomez<span class="custom-tooltip"><sup>&#42;</sup><span class="tooltip-text">Equal contribution</span></span>, I., Carver, R.,  Schneider, T., Anderson, J., Sha, F., Zepeda-Núñez, L. (2026) **Regional climate risk assessment from climate models using probabilistic machine learning**, *Nature Machine Intelligence*. [doi](https://doi.org/10.1038/s42256-026-01308-7) [cover](https://www.nature.com/natmachintell/volumes/8/issues/10)
 
-Stamatelopoulos, S., Wang, M., Lopez-Gomez, I., Zepeda-Núñez, L., Wan., Z. Y., Carver, R., Sha, F., Sapsis, T. (2026) **DySCo: Dynamically consistent data-driven downscaling of extremes in climate projections**, *arXiv*. [doi](https://arxiv.org/abs/2608.21998)
+Stamatelopoulos, S., Wang, M., Lopez-Gomez, I., Zepeda-Núñez, L., Wan., Z. Y., Carver, R., Sha, F., Sapsis, T. (2026) **DySCo: Dynamically consistent data-driven downscaling of extremes in climate projections**, *arXiv*. [arxiv](https://arxiv.org/abs/2608.21998)
 
-Lopez-Gomez, I., Brenner, M. P., Schneider, T. (2026) **Probabilistic Seasonal Streamflow Forecasting Across California’s Sierra Nevada Watersheds with Agentic AI**, *arXiv*. [doi](https://arxiv.org/abs/2605.16178)
+Lopez-Gomez, I., Brenner, M. P., Schneider, T. (2026) **Probabilistic Seasonal Streamflow Forecasting Across California’s Sierra Nevada Watersheds with Agentic AI**, *arXiv*. [arxiv](https://arxiv.org/abs/2605.16178)
 
-Henn, B., Bretherton, C., Kodunov, N., ..., Lopez-Gomez, I. (2026) **AIMIP Phase 1: systematic evaluations of AI weather and climate models**, *arXiv*. [doi](https://arxiv.org/abs/2605.06944)
+Henn, B., Bretherton, C., Kodunov, N., ..., Lopez-Gomez, I. (2026) **AIMIP Phase 1: systematic evaluations of AI weather and climate models**, *arXiv*. [arxiv](https://arxiv.org/abs/2605.06944)
 
 Guan, Y., Hassanzadeh, P., Schneider, T., Dunbar, O., Huang, D.Z., Wu, J., Lopez-Gomez, I. (2026) **Online learning of eddy-viscosity and backscattering closures for geophysical turbulence using ensemble Kalman inversion**, *Physical Review Research*, 8, 023215. [doi](https://doi.org/10.1103/mnbm-3g56)
 

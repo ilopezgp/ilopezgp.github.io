@@ -6,12 +6,40 @@
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function() {
   // 1. Automatic Visual Tags for publications & Auto-Cite Button
+  const copyTextToClipboard = (content) => {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(content);
+    }
+    return new Promise((resolve, reject) => {
+      const el = document.createElement('textarea');
+      el.value = content;
+      el.style.position = 'absolute';
+      el.style.left = '-9999px';
+      document.body.appendChild(el);
+      el.select();
+      try {
+        const ok = document.execCommand('copy');
+        document.body.removeChild(el);
+        if (ok) resolve();
+        else reject(new Error('Copy command failed'));
+      } catch (err) {
+        document.body.removeChild(el);
+        reject(err);
+      }
+    });
+  };
+
   const links = document.querySelectorAll("a");
   links.forEach(link => {
     const text = link.textContent.trim().toLowerCase();
-    if (text === "doi") {
-      link.classList.add("tag-doi");
-      
+    if (text === "doi" || text === "arxiv") {
+      link.classList.add(text === "doi" ? "tag-doi" : "tag-arxiv");
+
+      // Avoid adding duplicate Cite buttons if a paper lists both [doi] and [arxiv]
+      if (link.parentNode && link.parentNode.querySelector(".cite-btn")) {
+        return;
+      }
+
       // Create Cite Button
       const btn = document.createElement("span");
       btn.className = "cite-btn";
@@ -26,33 +54,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const url = link.href;
         let doi = "";
-        
-        // Extract DOI from URL
-        const doiMatch = url.match(/doi\.org\/(10\.\d{4,9}\/[-._;()/:A-Za-z0-9]+)/);
-        if (doiMatch) {
-          doi = doiMatch[1];
+        let arxivId = "";
+
+        // Extract arXiv ID if this is an arXiv URL or 10.48550/arXiv.* DOI
+        const arxivUrlMatch = url.match(/arxiv\.org\/(?:abs|pdf)\/([0-9]{4}\.[0-9]{4,5}(?:v\d+)?|[a-z-]+\/[0-9]{7}(?:v\d+)?)/i);
+        const arxivDoiMatch = url.match(/10\.48550\/arXiv\.([0-9]{4}\.[0-9]{4,5}|[a-z-]+\/[0-9]{7})/i);
+        if (arxivUrlMatch) {
+          arxivId = arxivUrlMatch[1].replace(/v\d+$/i, "");
+        } else if (arxivDoiMatch) {
+          arxivId = arxivDoiMatch[1];
         } else {
-          const genericMatch = url.match(/\/(10\.\d{4,9}\/[-._;()/:A-Za-z0-9]+)/);
-          if (genericMatch) doi = genericMatch[1];
+          // Extract standard Crossref DOI from URL
+          const doiMatch = url.match(/doi\.org\/(10\.\d{4,9}\/[-._;()/:A-Za-z0-9]+)/);
+          if (doiMatch) {
+            doi = doiMatch[1];
+          } else {
+            const genericMatch = url.match(/\/(10\.\d{4,9}\/[-._;()/:A-Za-z0-9]+)/);
+            if (genericMatch) doi = genericMatch[1];
+          }
         }
 
         const fallbackCopy = () => {
-          // Robust fallback using execCommand
-          const el = document.createElement('textarea');
-          el.value = url;
-          el.style.position = 'absolute';
-          el.style.left = '-9999px';
-          document.body.appendChild(el);
-          el.select();
-          try {
-            document.execCommand('copy');
-            btn.textContent = "URL Copied!";
-          } catch (err) {
-            console.error('Fallback copy failed', err);
-            btn.textContent = "Copy Failed";
-          }
-          document.body.removeChild(el);
-          
+          copyTextToClipboard(url)
+            .then(() => {
+              btn.textContent = "URL Copied!";
+            })
+            .catch(() => {
+              btn.textContent = "Copy Failed";
+            });
+
           btn.classList.add("error");
           setTimeout(() => {
             btn.textContent = "Cite";
@@ -60,29 +90,42 @@ document.addEventListener("DOMContentLoaded", function() {
           }, 2000);
         };
 
-        if (!doi) {
+        if (!doi && !arxivId) {
           fallbackCopy();
           return;
         }
 
         btn.textContent = "Loading...";
-        fetch(`https://api.crossref.org/works/${doi}/transform/application/x-bibtex`)
-          .then(response => {
-            if (!response.ok) throw new Error("Not found");
-            return response.text();
+        const fetchBibtex = arxivId
+          ? fetch(`https://api.datacite.org/dois/application/x-bibtex/10.48550/arXiv.${encodeURIComponent(arxivId)}`)
+              .then(response => {
+                if (!response.ok) throw new Error("Not found");
+                return response.text();
+              })
+              .then(bibtex => {
+                // Normalize DataCite URL-style cite key to a clean BibTeX key
+                return bibtex.replace(
+                  /^@(\w+)\{https?:\/\/doi\.org\/10\.48550\/arxiv\.([^,\s]+),/i,
+                  "@$1{arXiv:$2,"
+                );
+              })
+          : fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}/transform/application/x-bibtex`)
+              .then(response => {
+                if (!response.ok) throw new Error("Not found");
+                return response.text();
+              });
+
+        fetchBibtex
+          .then(bibtex => copyTextToClipboard(bibtex))
+          .then(() => {
+            btn.textContent = "Copied!";
+            btn.classList.add("copied");
+            setTimeout(() => {
+              btn.textContent = "Cite";
+              btn.classList.remove("copied");
+            }, 2000);
           })
-          .then(bibtex => {
-            navigator.clipboard.writeText(bibtex).then(() => {
-              btn.textContent = "Copied!";
-              btn.classList.add("copied");
-              setTimeout(() => {
-                btn.textContent = "Cite";
-                btn.classList.remove("copied");
-              }, 2000);
-            });
-          })
-          .catch(err => {
-            console.error("Cite fetch failed:", err);
+          .catch(() => {
             fallbackCopy();
           });
       });

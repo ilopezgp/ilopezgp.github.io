@@ -628,6 +628,7 @@ th, td {
 */
 
 .tag-doi,
+.tag-arxiv,
 .tag-pdf,
 .tag-cover,
 .tag-abstract,
@@ -655,6 +656,29 @@ th, td {
   background-color: #1565c0;
   color: #ffffff !important;
   border-color: #1565c0;
+  text-decoration: none;
+}
+
+.tag-arxiv {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  background-color: #e8eaf6; /* Pleasant light indigo */
+  color: #3949ab; /* Deep indigo */
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: all 0.15s ease;
+  border: 1px solid #9fa8da;
+  margin-right: 0.4rem;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.tag-arxiv:hover {
+  background-color: #3949ab;
+  color: #ffffff !important;
+  border-color: #3949ab;
   text-decoration: none;
 }
 
