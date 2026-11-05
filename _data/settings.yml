@@ -20,10 +20,10 @@ social:
 - {icon: 'envelope', link: 'mailto:ilopezgp@google.com'}
 # - {icon: 'researchgate', link: 'https://www.researchgate.net/profile/Ignacio_Lopez-Gomez'}
 # - {icon: 'rss-square', link: '/rss-feed.xml'}
-# - {icon: 'google', link: 'https://scholar.google.com/citations?user=eKE7em8AAAAJ&hl=es'}
+# - {icon: 'google', link: 'https://scholar.google.com/citations?user=eKE7em8AAAAJ&hl=en'}
 
 academic:
-- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=eKE7em8AAAAJ&hl=es'}
+- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=eKE7em8AAAAJ&hl=en'}
 - {icon: 'researchgate', link: 'https://www.researchgate.net/profile/Ignacio-Lopez-Gomez'}
 
 # Customize site text

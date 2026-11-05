@@ -36,7 +36,7 @@ Instead, we propose to combine the physical realism of dynamical downscaling wit
 | **Figure 2:** *Dynamical-generative downscaling extracts regional climate information from Earth system models in a two-step process. A regional climate model (RCM) provides a physics-based first pass, and generative AI adds the finer details.* |
 
 
-This hybrid approach leverages the strengths of both methods: the RCM provides a physically grounded base and handles the diversity of global models, while the AI excels at efficiently generating the high-resolution details and capturing the full range of regional environmental conditions. Importantly, the R2D2 model only needs training data from one dynamically downscaled Earth system model to learn how to effectively downscale outputs originating from different Earth system models. This enables our model to amortize the training cost when applied to large ensembles of climate projections.
+This hybrid approach leverages the strengths of both methods: the RCM provides a physically grounded base and handles the diversity of global models, while the AI excels at efficiently generating the high-resolution details and capturing the full range of regional environmental conditions. Importantly, the R2-D2 model only needs training data from one dynamically downscaled Earth system model to learn how to effectively downscale outputs originating from different Earth system models. This enables our model to amortize the training cost when applied to large ensembles of climate projections.
 
 ## Efficient and reliable regional climate projections
 
@@ -53,11 +53,11 @@ We trained and evaluated our model using the Western United States Dynamically D
 
 | ![DynGenDown-3a-Performance.width-1250.jpg](/assets/img/DynGenDown-3a-Performance.width-1250.jpg) | 
 |:--:| 
-| **Figure 3:** *A comparison of fine-scale prediction errors (a–c) and [energy spectra](https://en.wikipedia.org/wiki/Energy_cascade) (d–f) between our model (R2D2) and the statistical downscaling baselines (BCSD, STAR-ESDM) for ensemble projections of wind speed (left), relative humidity (center), and temperature (right). The new method shows lower error (CRPS) and more realistic weather patterns, as measured by the alignment of the R2D2 and target energy spectra. The bottom panels compare the covariation of hot and dry summer extremes (g–i) and wind extremes in the fall (j–l).* |
+| **Figure 3:** *A comparison of fine-scale prediction errors (a–c) and [energy spectra](https://en.wikipedia.org/wiki/Energy_cascade) (d–f) between our model (R2-D2) and the statistical downscaling baselines (BCSD, STAR-ESDM) for ensemble projections of wind speed (left), relative humidity (center), and temperature (right). The new method shows lower error (CRPS) and more realistic weather patterns, as measured by the alignment of the R2-D2 and target energy spectra. The bottom panels compare the covariation of hot and dry summer extremes (g–i) and wind extremes in the fall (j–l).* |
 
 | ![DynGenDown-4a-Wildfire.width-1250.jpg](/assets/img/DynGenDown-4a-Wildfire.width-1250.jpg) | 
 |:--:| 
-| **Figure 3:** *Model projections of wildfire risk during a strong Santa Ana wind event in Southern California under environmental conditions taken from an end-of-century climate projection. Wildfire risk is measured by the weather component of the [Santa Ana Wildfire Threat Index](https://www.fs.usda.gov/science-technology/fire/forecasting/santa-ana-wildfire-threat-index). The dynamical-generative approach (a) captures wildfire risk well compared to the more expensive dynamical downscaling method (b). Statistical downscaling methods such as STAR-ESDM (c) and BCSD (d) often struggle to capture the magnitude and spatial structure of such compound risks.* |
+| **Figure 4:** *Model projections of wildfire risk during a strong Santa Ana wind event in Southern California under environmental conditions taken from an end-of-century climate projection. Wildfire risk is measured by the weather component of the [Santa Ana Wildfire Threat Index](https://www.fs.usda.gov/science-technology/fire/forecasting/santa-ana-wildfire-threat-index). The dynamical-generative approach (a) captures wildfire risk well compared to the more expensive dynamical downscaling method (b). Statistical downscaling methods such as STAR-ESDM (c) and BCSD (d) often struggle to capture the magnitude and spatial structure of such compound risks.* |
 
 ## Why this breakthrough matters
 
